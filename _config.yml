@@ -15,7 +15,7 @@ direction: ltr
 # languages/*.yml
 nav:
   Home: /
-  About: /about/
+  Profile: /profile/
   Articles: /archives/
 
 
