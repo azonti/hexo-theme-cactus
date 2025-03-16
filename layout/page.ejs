@@ -36,8 +36,8 @@
         <% } else if (page.title === 'Profile') { %>
           <div>
             <img style="margin: 0 20px 0 0; width: 120px; height: 120px; border-radius: 50%; float: left;" src="https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=120" />
-            <span class="h1" style="margin: 20px 0">Shu Takayama (高山 柊)</span>
-            <div>
+            <span class="h1" style="margin: 5px 0">Shu Takayama (高山 柊)</span>
+            <div style="margin: 5px 0">
               <% var nb_links = theme.social_links.length %>
               <% var i = 0 %>
               <% for(var {label, icon, link} of theme.social_links) { %>
@@ -57,6 +57,11 @@
             ---><% } %>
                 <% i+=1 %>
               <% } %>
+            </div>
+            <div>
+              <a target="_blank" rel="noopener" href="https://ctftime.org/team/21252">NaruseJun - CTFtime.org</a><!--
+          ---><span style="margin: 0 10px">/</span><!--
+          ---><a target="_blank" rel="noopener" href="https://atcoder.jp/users/azon">azon - AtCoder</a>
             </div>
           </div>
           <%- page.content %>
